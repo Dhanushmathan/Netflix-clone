@@ -13,7 +13,7 @@
 body {
     background-color: #000;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", serif;
 }
 
 /* header navbar */
@@ -61,7 +61,7 @@ select {
     cursor: pointer;
 }
 
-.sign-btn {
+.sign-in-btn {
     background-color: var(--dark-red);
     padding: 10px 20px;
     color: #fff;
@@ -113,6 +113,11 @@ header .inner-text {
 
 .sign-btn {
     position: relative;
+    background-color: var(--dark-red);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
     padding: 15px 45px 15px 25px;
 }
 
@@ -292,32 +297,25 @@ main {
     margin-bottom: 20px;
 }
 
-/* footer */
+/* link-section */
 
-footer {
-    padding: 50px 150px;
-    width: 100%;
-    max-width: 120rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-footer .footer-link {
+.link-section .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
-footer ul {
+.links ul {
     text-decoration: underline;
 }
 
-footer ul li {
+.links ul li {
     margin-bottom: 10px;
     font-size: 15px;
 }
 
-footer ul li a {
+.links ul li a {
     color: #767686;
 }
 
@@ -325,12 +323,93 @@ footer ul li a {
     margin-top: 50px;
 }
 
-.copyright {
+/* footer */
+footer .copyright {
     background-color: #2e2e2e;
     text-align: center;
     padding: 20px 0;
 }
 
-.copyright a:hover {
+footer .copyright a:hover {
     color: #002fff;
+}
+
+
+/* media */
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        padding: 15px;
+    }
+
+    header select {
+        display: none;
+    }
+
+    header .inner-text {
+        margin: 5rem 20px 0 20px;
+    }
+
+    .inner-text h1 {
+        font-size: 35px;
+    }
+
+    .email-input {
+        width: 96%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding: 50px 30px;
+    }
+
+    .inner-text-pp {
+        font-size: 15px;
+    }
+
+    .card-section-title {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-section-title div {
+        padding-bottom: 10px;
+    }
+
+    .card-section-title-1 {
+        padding: 15px 270% 20px 15px;
+    }
+
+    .card-section-title-2 {
+        padding: 15px 180% 20px 15px;
+    }
+
+    .card-section-img img {
+        width: 180px;
+    }
+
+    .service-section ul {
+        flex-direction: column;
+    }
+
+    .service-section li {
+        width: 100%;
+        height: 13rem;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .service-section svg {
+        top: 130px;
+        left: 280px;
+    }
+
+    .desc-section {
+        text-align: start;
+    }
+
+    .link-section .links {
+        flex-direction: column;
+        align-items: start;
+    }
 }
