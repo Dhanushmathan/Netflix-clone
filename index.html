@@ -8,7 +8,7 @@
   <title>Netflix</title>
 
   <!-- CSS Link -->
-  <link rel="stylesheet" href="./assrts/css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 
   <!-- Font Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
           <option value="english">English</option>
           <option value="tamil">Tamil</option>
         </select>
-        <button class="btn sign-in-btn">Sign in</button>
+        <button class="btn sign-in-btn" id="signBtn"><a href="./login.html">Sign in</a></button>
       </div>
     </nav>
 
@@ -53,41 +53,44 @@
   <div class="bg-line"></div>
 
   <main>
-    <section class="card-section">
-      <h2>Trending Now</h2>
-      <div>
-        <ul class="card-section-img">
-          <li>
-            <img src="./assrts/img/netflix img1 (1).webp" alt="devara">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (2).webp" alt="nayanthara">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (3).webp" alt="goat">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (4).webp" alt="meiyazhagan">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (5).webp" alt="ankhan">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (6).webp" alt="animal">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (7).webp" alt="do patti">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (8).webp" alt="bageera">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (9).webp" alt="khal khal">
-          </li>
-          <li>
-            <img src="./assrts/img/netflix img1 (10).webp" alt="kabil">
-          </li>
-        </ul>
+
+    <section class="card-container">
+      <div class="card-section">
+        <h2>Trending Now</h2>
+        <div>
+          <ul class="card-section-img">
+            <li>
+              <img src="./assrts/img/netflix img1 (1).webp" alt="devara">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (2).webp" alt="nayanthara">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (3).webp" alt="goat">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (4).webp" alt="meiyazhagan">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (5).webp" alt="ankhan">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (6).webp" alt="animal">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (7).webp" alt="do patti">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (8).webp" alt="bageera">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (9).webp" alt="khal khal">
+            </li>
+            <li>
+              <img src="./assrts/img/netflix img1 (10).webp" alt="kabil">
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -531,13 +534,11 @@
   </main>
 
   <footer>
-    <div class="copyright">
-      CopyRight &copy; 2024 <a href="https://github.com/dhanushmathan">Dhanush mathan</a> - All Rights Reserved
-    </div>
+    <div class="copyright">Netflix India</div>
   </footer>
 
   <!-- JS Link -->
-  <script src="./assrts/js/script.js"></script>
+  <script src="./src/js/main.js"></script>
 </body>
 
 </html>

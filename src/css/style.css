@@ -26,6 +26,7 @@ header {
     box-shadow: inset 0 50px 300px #000, inset 0 -50px 300px #000;
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
 
 header nav {
@@ -68,6 +69,10 @@ select {
     border-radius: 5px;
     font-weight: 600;
     font-size: 18px;
+}
+
+.sign-in-btn>a {
+    color: #fff;
 }
 
 /* header innertext */
@@ -172,6 +177,74 @@ header .inner-text {
             rgba(33, 13, 22, 1) 84%);
 }
 
+/* Sign page */
+.sign {
+    width: 100%;
+    height: 100vh;
+    background: url(/assrts/img/Netflix_pg.jpg);
+    box-shadow: inset 0 50px 300px #000, inset 0 -50px 300px #000;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.sign-container {
+    border: 1px solid #2e2e2e;
+    padding: 50px 40px;
+    margin: 100px 12.5rem 6.25rem 28.125rem;
+    width: 35%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.sign-container>h1 {
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.sign-container input {
+    outline: none;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.sign-container button {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--dark-red);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 15px 0 20px 0;
+    border: none;
+}
+
+.sign-container>form>a {
+    font-size: 15px;
+    margin: 0 80px;
+    cursor: pointer;
+    letter-spacing: 0.1px;
+}
+
+.sign-container>form>a:hover {
+    color: #cfcdcd;
+    text-decoration: underline;
+}
+
+.sign-container .sign-footer {
+    font-size: 20px;
+    margin: 50px 0;
+}
+
 /* main */
 main {
     padding: 50px 150px;
@@ -179,6 +252,17 @@ main {
     max-width: 120rem;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    cursor: pointer;
+    position: relative;
 }
 
 .card-section h2 {
@@ -189,8 +273,6 @@ main {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    overflow-y: visible;
-    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-margin-inline-start: 2.5rem;
 }
@@ -375,8 +457,8 @@ footer .copyright a:hover {
     }
 
     .service-section svg {
-        top: 130px;
-        left: 280px;
+        top: 135px;
+        left: 250px;
     }
 
     .desc-section {
@@ -386,5 +468,15 @@ footer .copyright a:hover {
     .link-section .links {
         flex-direction: column;
         align-items: start;
+    }
+    .sign-container{
+        margin: 20px 30px;
+        width: 80%;
+        height: 80%;
+        padding: 30px 20px;
+    }
+    .sign-container>form>a{
+        font-size: 13px;
+        margin: 0 50px;
     }
 }
