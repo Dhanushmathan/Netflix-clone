@@ -472,11 +472,11 @@ footer .copyright a:hover {
     .sign-container{
         margin: 20px 30px;
         width: 80%;
-        height: 80%;
+        height: 70%;
         padding: 30px 20px;
     }
     .sign-container>form>a{
         font-size: 13px;
-        margin: 0 50px;
+        margin: 0 30px;
     }
 }
